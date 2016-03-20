@@ -2,24 +2,12 @@
 
 import '../styles/progress.scss';
 
-const _Timeout = new WeakMap();
-
 class ProgressController {
-    constructor($timeout) {
-        _Timeout.set(this, $timeout);
-        this.progress = 0;
-    }
+    constructor() {
 
-    increment() {
-        _Timeout.get(this)(() => {
-            if(this.progress <= 100) {
-                this.progress++;
-                this.increment();
-            }
-        }, 50);
     }
 }
 
-ProgressController.$inject = ['$timeout'];
+ProgressController.$inject = [];
 
 export default ProgressController;

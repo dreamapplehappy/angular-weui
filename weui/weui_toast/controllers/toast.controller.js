@@ -2,22 +2,12 @@
 
 import '../styles/toast.scss';
 
-const _Timeout = new WeakMap();
-
 class ToastController {
-    constructor($timeout) {
-        _Timeout.set(this, $timeout);
-        this.show = false;
-    }
+    constructor() {
 
-    showToast() {
-        this.show = true;
-        _Timeout.get(this)(() => {
-            this.show = false;
-        }, 2000);
     }
 }
 
-ToastController.$inject = ['$timeout'];
+ToastController.$inject = [];
 
 export default ToastController;
