@@ -1,4 +1,3 @@
-<a ng-click="$ctrl.showToast()" class="weui_btn weui_btn_primary" id="showToast">点击弹出Toast</a>
 <div ng-show="$ctrl.show" id="loadingToast" class="weui_loading_toast">
     <div class="weui_mask_transparent"></div>
     <div class="weui_toast">
@@ -16,6 +15,6 @@
             <div class="weui_loading_leaf weui_loading_leaf_10"></div>
             <div class="weui_loading_leaf weui_loading_leaf_11"></div>
         </div>
-        <p class="weui_toast_content">数据加载中</p>
+        <p class="weui_toast_content">{{$ctrl.loadingToastInfo}}</p>
     </div>
 </div>

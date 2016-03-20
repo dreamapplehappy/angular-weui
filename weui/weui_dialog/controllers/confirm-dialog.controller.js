@@ -2,14 +2,7 @@
 
 class ConfirmDialogController {
     constructor() {
-        this.show = false;
-    }
 
-    showConfirmDialog() {
-        this.show = true;
-    }
-    hideConfirmDialog() {
-        this.show = false;
     }
 }
 
